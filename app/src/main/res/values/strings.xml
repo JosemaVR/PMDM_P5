@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FilmingApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_inicio">Filming App</string>
+    <string name="menu_peliculas">Películas</string>
+    <string name="menu_series">Series</string>
+
+    <string name="serie_bad">Breaking Bad</string>
+    <string name="serie_tronos">Juego de Tronos</string>
+    <string name="serie_mandalorian">The Mandalorian</string>
+    <string name="serie_chernobyl">Chernobyl</string>
+    <string name="serie_mirror">Black Mirror</string>
+
+    <string name="pelicula_pianista">El pianista</string>
+    <string name="pelicula_lucha">El club de la lucha</string>
+    <string name="pelicula_batman">El caballero oscuro</string>
+    <string name="pelicula_1917">1917</string>
+    <string name="pelicula_torino">Gran Torino</string>
+
+    <string name="director">Director:</string>
+    <string name="reparto">Reparto:</string>
+    <string name="sinopsis">Sinopsis:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
