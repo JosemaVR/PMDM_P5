@@ -41,14 +41,10 @@ public class SeriesFragment extends Fragment {
         items.add(new Series(R.drawable.serie_tronos, "Juego de Tronos", "David Benioff, D.B. Weiss ",
                 "Lena Headey, Peter Dinklage, Maisie Williams, Emilia Clarke, Kit Harington...",
                 8.6, "La historia se desarrolla en un mundo ficticio de carácter medieval donde hay Siete Reinos. Hay tres líneas argumentales principales: la crónica de la guerra civil dinástica por el control de Poniente entre varias familias nobles que aspiran al Trono de Hierro; la creciente amenaza de \"los otros\", seres desconocidos que viven al otro lado de un inmenso muro de hielo que protege el Norte de Poniente; y el viaje de Daenerys Targaryen, la hija exiliada del rey que fue asesinado en una guerra civil anterior, y que pretende regresar a Poniente para reclamar sus derechos dinásticos. Tras un largo verano de varios años, el temible invierno se acerca a los Siete Reinos. Lord Eddard 'Ned' Stark, señor de Invernalia, deja sus dominios para ir a la corte de su amigo, el rey Robert Baratheon, en Desembarco del Rey, la capital de los Siete Reinos. Stark se convierte en la Mano del Rey e intenta desentrañar una maraña de intrigas que pondrá en peligro su vida y la de todos los suyos. Mientras tanto, diversas facciones conspiran con un solo objetivo: apoderarse del trono.", 8));
-
-
         recycler = (RecyclerView) rootView.findViewById(R.id.recyclerViewPeliculas);
         recycler.setHasFixedSize(true);
-
         lManager = new LinearLayoutManager(getContext());
         recycler.setLayoutManager(lManager);
-
         adapter = new SeriesAdapter(items, recyclerViewOnItemClickListener);
         recycler.setAdapter(adapter);
         setupRecyclerView();

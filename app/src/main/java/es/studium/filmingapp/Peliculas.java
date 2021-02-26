@@ -1,7 +1,5 @@
 package es.studium.filmingapp;
 
-import android.util.Log;
-
 public class Peliculas {
 
     String titulo, director, reparto, sinopsis;
@@ -75,4 +73,3 @@ public class Peliculas {
         this.clasificacion = clasificacion;
     }
 }
-

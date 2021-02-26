@@ -1,7 +1,6 @@
 package es.studium.filmingapp;
 
 import android.annotation.SuppressLint;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -23,11 +22,9 @@ public class PeliculasViewHolder extends RecyclerView.ViewHolder implements View
         caratula = (ImageView)  itemView.findViewById(R.id.caratula);
         titulo = itemView.findViewById(R.id.titulo);
         estrellas = itemView.findViewById(R.id.estrellas);
-
         titulo.setOnClickListener(this);
         caratula.setOnClickListener(this);
         estrellas.setOnClickListener(this);
-
         this.listener = listener;
     }
 

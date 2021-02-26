@@ -14,7 +14,7 @@ public class Series {
         this.clasificacion = 0.;
         this.sinopsis = "";
         this.temporadas = 0;
-}
+    }
 
     public Series(Integer caratula, String titulo, String director, String reparto,
                      Double clasificacion, String sinopsis, Integer temporadas){

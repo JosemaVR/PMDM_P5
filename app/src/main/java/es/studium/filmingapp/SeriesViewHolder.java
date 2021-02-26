@@ -22,11 +22,9 @@ public class SeriesViewHolder extends RecyclerView.ViewHolder implements View.On
         caratula = (ImageView)  itemView.findViewById(R.id.caratula);
         titulo = itemView.findViewById(R.id.titulo);
         estrellas = itemView.findViewById(R.id.estrellas);
-
         titulo.setOnClickListener(this);
         caratula.setOnClickListener(this);
         estrellas.setOnClickListener(this);
-
         this.listener = listener;
     }
 
