@@ -5,7 +5,6 @@ public class Peliculas {
     String titulo, director, reparto, sinopsis;
     Double clasificacion;
     Integer caratula;
-
     public Peliculas(){
         this.caratula = null;
         this.titulo = "";
@@ -14,7 +13,6 @@ public class Peliculas {
         this.clasificacion = 0.;
         this.sinopsis = "";
     }
-
     public Peliculas(Integer caratula, String titulo, String director, String reparto,
                      Double clasificacion, String sinopsis){
         this.caratula = caratula;
@@ -24,7 +22,6 @@ public class Peliculas {
         this.clasificacion = clasificacion;
         this.sinopsis = sinopsis;
     }
-
     public Integer getCaratula() {
         return caratula;
     }

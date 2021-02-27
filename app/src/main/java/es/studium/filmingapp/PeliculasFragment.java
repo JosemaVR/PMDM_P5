@@ -61,9 +61,7 @@ public class PeliculasFragment extends Fragment {
             public void onClick(View v, int position) {
                 switch(v.getId()) {
                     case R.id.caratula:
-                        Intent zoom = new Intent(rootView.getContext(), Zoom.class);
-                        zoom.putExtra("Caratula", items.get(position).getCaratula());
-                        startActivity(zoom);
+                        verDetalles(position);
                         break;
                     case R.id.titulo:
                         verDetalles(position);

@@ -58,14 +58,9 @@ public class SeriesFragment extends Fragment {
             public void onClick(View v, int position) {
                 switch(v.getId()) {
                     case R.id.caratula:
-                        Intent zoom = new Intent(rootView.getContext(), Zoom.class);
-                        zoom.putExtra("Caratula", items.get(position).getCaratula());
-                        startActivity(zoom);
-                        break;
-                    case R.id.titulo:
                         verDetalles(position);
                         break;
-                    case R.id.estrellas:
+                    case R.id.titulo:
                         verDetalles(position);
                         break;
                 }

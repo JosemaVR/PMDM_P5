@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
 
     @SuppressLint("ResourceType")
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -29,9 +28,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setItemIconTintList(null);
         navigationView.setBackgroundResource(R.color.celeste);
-        mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_peliculas, R.id.nav_series)
-                .setDrawerLayout(drawer)
-                .build();
+        mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_peliculas, R.id.nav_series).setDrawerLayout(drawer).build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
@@ -44,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-    @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
